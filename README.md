@@ -10,11 +10,11 @@ Repositório para exercitar git e pre-processamento de imagens
 3. Pré-processamento e Mudança de Cor:
 - Converta a imagem "envelopada" de BGR para Tons de Cinza.
 - Aplique um desfoque (Blur) e um limiar (Threshold) ou Canny para criar uma máscara binária (fundo preto e objetos brancos).
-Operações Morfológicas:
+4. Operações Morfológicas:
 - A máscara gerada provavelmente terá ruídos (pontos brancos isolados) e falhas dentro das peças (buracos pretos).
 - Utilize operações de Abertura (Opening) para remover os ruídos externos.
 - Utilize operações de Fechamento (Closing) para preencher os buracos dentro dos componentes.
-4. Separação de Objetos e Gravação:
+5. Separação de Objetos e Gravação:
 - Encontre os contornos das peças na máscara morfológica.
 - Para cada peça encontrada, desenhe um retângulo delimitador (Bounding Box) na imagem cinza original (para visualização).
 - Recorte (crop) a região de cada peça usando as coordenadas do retângulo.
